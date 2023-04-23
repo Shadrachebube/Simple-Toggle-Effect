@@ -1,0 +1,142 @@
+body{
+    background: white;
+    height: 100vh;
+
+}
+
+.container{
+    width: 500px;
+    height: 500px;
+    background: blue;
+    margin: 20% auto;
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+input[ type="checkbox"].toggle{
+    display: none;
+}
+
+/* input[type=checkbox].toggle + label{
+    position: relative;
+    width: 200px;
+    display: inline-block;
+    height:80px;
+    border-radius: 30px;
+    background: rgb(59, 59, 73);
+   
+    margin:auto;
+} */
+
+/* input[type=checkbox].toggle + label:before{
+    width: 65px;
+    height: 65px;
+    z-index: 4;
+    background: white;
+    position: absolute;
+    top: 5px;
+    left: 7px;
+    border-radius: 50%;
+    content: ""
+} */
+
+/* input[type=checkbox].toggle:checked + label:before{
+    transform: translateX(120px);
+} */
+input[type=checkbox].toggle + label{
+
+    position: relative;
+    width: 200px;
+    display: flex;
+    
+    height:80px;
+    border-radius: 30px;
+    background: gray;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
+    overflow: hidden;
+}
+
+.span1{
+    height: 50px;
+    z-index: 2;
+    width: 45%;
+    background: white;
+    overflow: hidden;
+    border-radius: 50%;
+    text-align: center;
+   justify-items: center;
+   display: flex;
+   align-items: center;
+   text-decoration-style: wavy;
+    position: absolute;
+   
+    left: 0;
+ 
+}
+
+.span2{
+    height:150px;
+    width: 45%;
+    z-index: 2;
+    background: white;
+    overflow: hidden;
+  
+    position: absolute;
+    right: 0;
+    
+}
+
+h1{ height: 20px;
+    width: 100%;
+    text-shadow: 1.4px 1.4px rgb(104, 101, 101);
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+/* .span1:nth-child(1){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+.span2:nth-child(2){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} */
+
+input[type=checkbox].toggle:checked + label {
+    display: flex;
+    justify-content: space-between;
+
+} 
+
+input[type=checkbox].toggle:checked + label >.span1{
+    /* transform: translateX(107px); */
+    left: 110px;
+}
+
+input[type=checkbox].toggle:checked + label >.span2{
+    /* transform: translateX(-110px); */
+right: 110px;
+}
+
+/* Note: You can use any of the above methods to 
+solve the same Toggle button 
+problems  */
+
+/* 
+Thank you lord for giving me the grace to understand coding
+I love coding its part of where i want to belong in life
+Thy Lord is my Strenght  */
